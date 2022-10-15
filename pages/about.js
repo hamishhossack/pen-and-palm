@@ -1,8 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
-import Root from '../components/common/Root';
-import Footer from '../components/common/Footer';
+import React from "react";
+import Head from "next/head";
+import Root from "../components/common/Root";
+import Footer from "../components/common/Footer";
 
 const About = () => (
   <Root>
@@ -26,7 +25,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image
+              <img
                 src="/images/ilona.jpg"
                 alt="Ilona"
                 width="350"
@@ -43,7 +42,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image
+              <img
                 src="/images/suite.jpg"
                 alt="Suite"
                 width="400"
