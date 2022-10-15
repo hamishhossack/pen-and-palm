@@ -1,25 +1,25 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const imagesInfo = [
   {
-    image: "/images/insta/1.jpg",
+    image: '/images/insta/1.jpg',
     translateRatio: -50,
   },
   {
-    image: "/images/insta/2.jpg",
+    image: '/images/insta/2.jpg',
     translateRatio: 30,
   },
   {
-    image: "/images/insta/3.jpg",
+    image: '/images/insta/3.jpg',
     translateRatio: 0,
   },
   {
-    image: "/images/insta/4.jpg",
+    image: '/images/insta/4.jpg',
     translateRatio: -20,
   },
   {
-    image: "/images/insta/5.jpg",
+    image: '/images/insta/5.jpg',
     translateRatio: -80,
   },
 ];
@@ -36,12 +36,12 @@ export default class SocialMedia extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
     this.animate();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
@@ -70,7 +70,7 @@ export default class SocialMedia extends React.Component {
         <div ref={this.followContainer} className="custom-container px-3 mb-5 footer-follow">
           <div className="row footer-follow--header">
             <div className="px-3 footer-follow--title">
-              <p className="font-size-display1 mb-3" style={{ maxWidth: "26rem" }}>
+              <p className="font-size-display1 mb-3" style={{ maxWidth: '26rem' }}>
                 Follow us on Instagram for more updates
               </p>
               <div className="d-flex">
@@ -92,7 +92,7 @@ export default class SocialMedia extends React.Component {
                 <div
                   ref={(image) => this.images.push(image)}
                   style={{
-                    paddingBottom: "100%",
+                    paddingBottom: '100%',
                     background: `url("${item.image}") center center/cover`,
                   }}
                 />

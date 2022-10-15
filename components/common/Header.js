@@ -1,35 +1,35 @@
-import React, { Component } from "react";
-import Link from "next/link";
-import Cart from "../cart/Cart";
-import commerce from "../../lib/commerce";
-import Animation from "../cart/Animation";
-import { Transition } from "react-transition-group";
-import { connect } from "react-redux";
-import { clearCustomer } from "../../store/actions/authenticateActions";
+import React, { Component } from 'react';
+import Link from 'next/link';
+import Cart from '../cart/Cart';
+import commerce from '../../lib/commerce';
+import Animation from '../cart/Animation';
+import { Transition } from 'react-transition-group';
+import { connect } from 'react-redux';
+import { clearCustomer } from '../../store/actions/authenticateActions';
 
 const duration = 300;
 
 const defaultStyle = {
-  zIndex: "-1",
+  zIndex: '-1',
   transition: `height ${duration}ms ease-in-out`,
   height: 0,
 };
 
 const transitionStyles = {
-  entering: { height: "100vh" },
-  entered: { height: "100vh" },
+  entering: { height: '100vh' },
+  entered: { height: '100vh' },
   exiting: { height: 0 },
   exited: { height: 0 },
 };
 
 const mobileMenuLinks = [
   {
-    name: "Home",
-    link: "/",
+    name: 'Home',
+    link: '/',
   },
   {
-    name: "About",
-    link: "/about",
+    name: 'About',
+    link: '/about',
   },
 ];
 
@@ -56,8 +56,8 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-    window.addEventListener("Commercejs.Cart.Item.Added", this.handleAddToCartToggle);
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('Commercejs.Cart.Item.Added', this.handleAddToCartToggle);
 
     this.setState({
       loggedIn: commerce.customer.isLoggedIn(),
@@ -65,8 +65,8 @@ class Header extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-    window.removeEventListener("Commercejs.Cart.Item.Added", this.handleAddToCartToggle);
+    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('Commercejs.Cart.Item.Added', this.handleAddToCartToggle);
   }
 
   toggleCart() {
@@ -95,9 +95,9 @@ class Header extends Component {
     }
 
     if (window.scrollY > 10) {
-      this.header.current.classList.add("invert");
+      this.header.current.classList.add('invert');
     } else {
-      this.header.current.classList.remove("invert");
+      this.header.current.classList.remove('invert');
     }
   }
 
@@ -106,7 +106,7 @@ class Header extends Component {
     this.setState({ showMobileMenu: !showMobileMenu });
 
     if (!showMobileMenu) {
-      this.header.current.classList.add("invert");
+      this.header.current.classList.add('invert');
     } else {
       this.animate();
     }
@@ -172,7 +172,7 @@ class Header extends Component {
         <div
           ref={this.header}
           className={`d-flex header align-items-center justify-content-between position-relative ${
-            transparent ? "" : "invert"
+            transparent ? '' : 'invert'
           }`}
         >
           <div className="d-none d-sm-flex">
@@ -182,7 +182,7 @@ class Header extends Component {
           </div>
           <div className="logo-container">
             <img
-              src={`/icon/${showMobileMenu ? "cross" : "menu"}.svg`}
+              src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
               onClick={this.toggleMobileMenu}
               className="w-32 mr-1 d-block d-sm-none"
               alt="Menu icon"
@@ -204,14 +204,14 @@ class Header extends Component {
                 ...defaultStyle,
                 ...transitionStyles[state],
                 // Prevent gap being shown at bottom of mobile menu
-                top: "1em",
+                top: '1em',
               }}
             >
               <div
                 className="position-absolute left-0 right-0 h-100vh mobile-menu-inner bg-black700 d-flex flex-column justify-content-center"
                 style={{
                   // Prevent mobile menu items (e.g. Home) being hidden behind navbar on small screen heights (e.g. iPhone4 landscape of 320px height)
-                  top: "4em",
+                  top: '4em',
                 }}
               >
                 {mobileMenuLinks.map((item, i) => (

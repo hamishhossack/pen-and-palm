@@ -1,7 +1,7 @@
-import React from "react";
-import { Autoplay, EffectFade, Swiper as SwiperCore } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
+import React from 'react';
+import { Autoplay, EffectFade, Swiper as SwiperCore } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 
 const params = {
   slidesPerView: 1,
@@ -12,16 +12,16 @@ const params = {
   loop: true,
   allowTouchMove: false,
   speed: 1000,
-  effect: "fade",
+  effect: 'fade',
   fadeEffect: {
     crossFade: true,
   },
 };
 const images = [
-  "/images/home-1.jpg",
-  "/images/home-2.jpg",
-  "/images/home-3.jpg",
-  "/images/home-4.jpg",
+  '/images/home-1.jpg',
+  '/images/home-2.jpg',
+  '/images/home-3.jpg',
+  '/images/home-4.jpg',
 ];
 
 export default function HeroSection() {

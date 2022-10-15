@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default class ExploreBanner extends React.Component {
   constructor(props) {
@@ -12,12 +12,12 @@ export default class ExploreBanner extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
     this.handleScroll();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
@@ -29,7 +29,7 @@ export default class ExploreBanner extends React.Component {
       return;
     }
     const dimensions = this.exploreContainer.current.getBoundingClientRect();
-    const x = window.matchMedia("(min-width: 768px)");
+    const x = window.matchMedia('(min-width: 768px)');
 
     if (x.matches) {
       if (dimensions.top - window.innerHeight < 0 && dimensions.bottom > 0) {
@@ -66,7 +66,7 @@ export default class ExploreBanner extends React.Component {
                 <form name="contact" netlify="true">
                   <h3 className="mb-4">I&apos;d love to hear from you</h3>
                   <p>
-                    Contact Ilona by the form below or directly through{" "}
+                    Contact Ilona by the form below or directly through{' '}
                     <a href="mailto: info@penandpalm.com">info@penandpalm.com</a>
                   </p>
                   <p className="mb-4">
