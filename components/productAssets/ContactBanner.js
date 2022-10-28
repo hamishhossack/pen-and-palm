@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class ExploreBanner extends React.Component {
+export default class ContactBanner extends React.Component {
   constructor(props) {
     super(props);
 
-    this.exploreContainer = React.createRef();
+    this.contactContainer = React.createRef();
     this.image = React.createRef();
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -25,10 +25,10 @@ export default class ExploreBanner extends React.Component {
   }
 
   animate() {
-    if (!this.exploreContainer.current) {
+    if (!this.contactContainer.current) {
       return;
     }
-    const dimensions = this.exploreContainer.current.getBoundingClientRect();
+    const dimensions = this.contactContainer.current.getBoundingClientRect();
     const x = window.matchMedia('(min-width: 768px)');
 
     if (x.matches) {
@@ -42,7 +42,7 @@ export default class ExploreBanner extends React.Component {
 
   render() {
     return (
-      <div className="py-5 mb-5 explore-banner">
+      <div className="py-5 mb-5 contact-banner">
         <div className="bg-brand300 position-relative py-md-5">
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">
@@ -51,7 +51,7 @@ export default class ExploreBanner extends React.Component {
                 <div className="col-md-5 offset-md-7">
                   <div className="position-relative">
                     <div className="position-md-absolute right-0 left-0 bottom-0">
-                      <div ref={this.image} className="explore-banner--image" />
+                      <div ref={this.image} className="contact-banner--image" />
                     </div>
                   </div>
                 </div>
@@ -60,18 +60,17 @@ export default class ExploreBanner extends React.Component {
           </div>
 
           {/* Content */}
-          <div ref={this.exploreContainer} className="custom-container py-md-5">
+          <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row py-5">
               <div className="col-12 col-md-6">
                 <form name="contact" netlify="true">
                   <h3 className="mb-4">I&apos;d love to hear from you</h3>
                   <p>
-                    Contact Ilona by the form below or directly through{' '}
-                    <a href="mailto: info@penandpalm.com">info@penandpalm.com</a>
+                    You can get in touch via the form below or directly by emailing
+                    <a href="mailto: info@penandpalm.com">hello@penandpalm.com</a>.
                   </p>
                   <p className="mb-4">
-                    Please include as much detail as possible about your special day and
-                    requirements
+                    Please include as much detail as possible about your special day.
                   </p>
                   <div className="row align-items-center mb-2">
                     <label className="col-3">Name</label>
@@ -95,7 +94,7 @@ export default class ExploreBanner extends React.Component {
                       className="col-9 form-control"
                       rows="3"
                       name="message"
-                      placeholder="Please include all of your requirements and preferences including materials, colours and sizes"
+                      placeholder="please include any requirements, ideas or preferences you have."
                     />
                   </div>
 

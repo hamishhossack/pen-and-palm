@@ -38,10 +38,10 @@ export default function HeroSection() {
               }}
             >
               <p className="font-size-display5 font-family-secondary mb-4 text-center hero-header">
-                Calligraphy, lettering, design.
+                Calligraphy, signage & stationery
               </p>
               <p className="text-transform-uppercase font-size-title mb-5 hero-subheader">
-                Beautiful bespoke wedding stationery and modern calligraphy pieces.
+                Beautifully bespoke and uniquely you
               </p>
             </div>
           </SwiperSlide>

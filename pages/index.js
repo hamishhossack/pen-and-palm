@@ -3,9 +3,10 @@ import Head from 'next/head';
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
 import SocialMedia from '../components/common/SocialMedia';
-import ExploreBanner from '../components/productAssets/ExploreBanner';
+import ContactBanner from '../components/productAssets/ContactBanner';
 import HeroSection from '../components/homepage/HeroSection';
 import HomeBanner from '../components/homepage/HomeBanner';
+import QuoteBanner from '../components/homepage/QuoteBanner';
 
 const Home = () => (
   <Root transparentHeader={true}>
@@ -15,7 +16,8 @@ const Home = () => (
 
     <HeroSection />
     <HomeBanner />
-    <ExploreBanner />
+    <ContactBanner />
+    <QuoteBanner />
     <SocialMedia />
     <Footer />
   </Root>
