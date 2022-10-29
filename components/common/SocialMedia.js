@@ -4,23 +4,18 @@ import Link from 'next/link';
 const imagesInfo = [
   {
     image: '/images/insta/1.jpg',
-    translateRatio: -50,
   },
   {
     image: '/images/insta/2.jpg',
-    translateRatio: 30,
   },
   {
     image: '/images/insta/3.jpg',
-    translateRatio: 0,
   },
   {
     image: '/images/insta/4.jpg',
-    translateRatio: -20,
   },
   {
     image: '/images/insta/5.jpg',
-    translateRatio: -80,
   },
 ];
 
@@ -38,7 +33,7 @@ export default class SocialMedia extends React.Component {
               <a
                 key={item.image}
                 href="https://www.instagram.com/penandpalm/"
-                className="col"
+                className="col-md col-sm-6 pb-3"
                 target="_blank"
                 rel="noopener noreferrer"
               >

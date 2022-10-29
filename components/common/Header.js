@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import Cart from '../cart/Cart';
 import commerce from '../../lib/commerce';
-import Animation from '../cart/Animation';
 import { Transition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { clearCustomer } from '../../store/actions/authenticateActions';
@@ -30,6 +29,14 @@ const mobileMenuLinks = [
   {
     name: 'About',
     link: '/about',
+  },
+  {
+    name: 'Services',
+    link: '/services',
+  },
+  {
+    name: 'Contact',
+    link: '/contact',
   },
 ];
 
@@ -175,9 +182,13 @@ class Header extends Component {
             transparent ? '' : 'invert'
           }`}
         >
-          <div className="d-none d-sm-flex">
+          <div className="d-none d-sm-flex align-items-center">
             <Link href="/about">
-              <a className="font-color-black">About</a>
+              <a className="mr-4 font-color-black">About</a>
+            </Link>
+
+            <Link href="/services">
+              <a className="font-color-black">Services</a>
             </Link>
           </div>
           <div className="logo-container">
@@ -191,6 +202,12 @@ class Header extends Component {
               <a>
                 <img src="/images/logo.svg" className="logo cursor-pointer" alt="Pen & Palm Logo" />
               </a>
+            </Link>
+          </div>
+
+          <div className="d-none d-sm-flex">
+            <Link href="/contact">
+              <a className="font-color-black">Contact</a>
             </Link>
           </div>
         </div>

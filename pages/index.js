@@ -7,6 +7,7 @@ import ContactBanner from '../components/productAssets/ContactBanner';
 import HeroSection from '../components/homepage/HeroSection';
 import HomeBanner from '../components/homepage/HomeBanner';
 import QuoteBanner from '../components/homepage/QuoteBanner';
+import AsSeenInBanner from '../components/homepage/AsSeenInBanner';
 
 const Home = () => (
   <Root transparentHeader={true}>
@@ -19,6 +20,7 @@ const Home = () => (
     <ContactBanner />
     <QuoteBanner />
     <SocialMedia />
+    <AsSeenInBanner />
     <Footer />
   </Root>
 );

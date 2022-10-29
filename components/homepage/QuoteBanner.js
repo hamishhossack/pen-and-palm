@@ -4,11 +4,9 @@ import { connect } from 'react-redux';
 
 class QuoteBanner extends Component {
   render() {
-    const { categories } = this.props;
-
     return (
       <div className="custom-container py-5">
-        <p className="font-size-display2 font-italic my-3 py-5 text-center font-family-secondary">
+        <p className="font-size-display2 font-italic my-3 text-center font-family-secondary">
           “Ilona is a perfectionist and an incredible artist at calligraphy.” <br />- EC
         </p>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Autoplay, EffectFade, Swiper as SwiperCore } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link';
 
 const params = {
   slidesPerView: 1,
@@ -40,7 +39,7 @@ export default function HeroSection() {
               <p className="font-size-display5 font-family-secondary mb-4 text-center hero-header">
                 Calligraphy, signage & stationery
               </p>
-              <p className="text-transform-uppercase font-size-title mb-5 hero-subheader">
+              <p className="text-transform-uppercase font-size-title mb-5 text-center hero-subheader">
                 Beautifully bespoke and uniquely you
               </p>
             </div>

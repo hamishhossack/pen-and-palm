@@ -42,7 +42,7 @@ export default class ContactBanner extends React.Component {
 
   render() {
     return (
-      <div className="py-5 mb-5 contact-banner">
+      <div className="py-5 mb-5 section-banner">
         <div className="bg-brand300 position-relative py-md-5">
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">
@@ -64,9 +64,9 @@ export default class ContactBanner extends React.Component {
             <div className="row py-5">
               <div className="col-12 col-md-6">
                 <form name="contact" netlify="true">
-                  <h3 className="mb-4">I&apos;d love to hear from you</h3>
-                  <p>
-                    You can get in touch via the form below or directly by emailing
+                  <h3 className="mb-4 font-family-secondary">I&apos;d love to hear from you</h3>
+                  <p className="mb-2">
+                    You can get in touch via the form below or directly by emailing&nbsp;
                     <a href="mailto: info@penandpalm.com">hello@penandpalm.com</a>.
                   </p>
                   <p className="mb-4">
@@ -99,7 +99,7 @@ export default class ContactBanner extends React.Component {
                   </div>
 
                   <div className="row">
-                    <button className="col-3 ml-auto py-3 align-items-center font-color-black borderbottom border-color-black">
+                    <button className="col-4 ml-auto py-3 align-items-center font-color-black borderbottom border-color-black">
                       <span className="mr-3">Send</span>
                       <img src="/icon/arrow-long-right.svg" />
                     </button>
