@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => (
@@ -8,22 +9,15 @@ const Footer = () => (
           <p className="font-family-secondary font-size-display1 mb-4">Pen & Palm</p>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
-              <a
-                href="https://commercejs.com/docs/"
-                className="mb-3 d-block font-color-medium"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                About
-              </a>
-              <a
-                href="https://commercejs.com/features"
-                className="d-block font-color-medium"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contact
-              </a>
+              <Link href="/about">
+                <a className="mb-3 d-block font-color-medium">About</a>
+              </Link>
+              <Link href="/services">
+                <a className="mb-3 d-block font-color-medium">Services</a>
+              </Link>
+              <Link href="/contact">
+                <a className="mb-3 d-block font-color-medium">Contact</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -61,12 +55,23 @@ const Footer = () => (
           </div>
         </div>
         <div className="col-12 col-md-4">
-          <p className="font-family-secondary font-size-display1 mb-3">Contact</p>
-          <p className="mb-3">
-            Contact on email&nbsp;
-            <a href="mailto: info@penandpalm.com">info@penandpalm.com</a>
-          </p>
-          <p>You can also DM me on any social media platform!</p>
+          <p className="font-family-secondary font-size-display1 mb-4">The Serious stuff..</p>
+          <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
+            <div className="pr-5">
+              <Link href="/privacy">
+                <a className="mb-3 d-block font-color-medium">Privacy Policy</a>
+              </Link>
+              <Link href="/terms">
+                <a className="mb-3 d-block font-color-medium">Terms & Conditions</a>
+              </Link>
+              <Link href="/credits">
+                <a className="mb-3 d-block font-color-medium">Credits</a>
+              </Link>
+              <Link href="/sustainability">
+                <a className="mb-3 d-block font-color-medium">Sustainability</a>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
