@@ -2,6 +2,7 @@
   .contact-banner--image {
     background: url('/images/contact.jpg') center center/cover;
     padding-bottom: 100%;
+    margin-bottom: 35%;
 
     @include md {
       padding-bottom: 180%;

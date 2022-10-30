@@ -42,7 +42,7 @@ export default class ContactBanner extends React.Component {
 
   render() {
     return (
-      <div className="py-5 mb-5 section-banner">
+      <div className="mb-5 section-banner">
         <div className="bg-brand300 position-relative py-md-5">
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">

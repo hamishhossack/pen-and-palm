@@ -8,6 +8,7 @@ import HeroSection from '../components/homepage/HeroSection';
 import HomeBanner from '../components/homepage/HomeBanner';
 import QuoteBanner from '../components/homepage/QuoteBanner';
 import AsSeenInBanner from '../components/homepage/AsSeenInBanner';
+import ServiceBanner from '../components/homepage/ServiceBanner';
 
 const Home = () => (
   <Root transparentHeader={true}>
@@ -17,6 +18,7 @@ const Home = () => (
 
     <HeroSection />
     <HomeBanner />
+    <ServiceBanner />
     <ContactBanner />
     <QuoteBanner />
     <SocialMedia />

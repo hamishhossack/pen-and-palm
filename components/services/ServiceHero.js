@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ServiceBanner() {
+export default function ServiceHero() {
   return (
     <div className="p-5 mt-6">
       <p

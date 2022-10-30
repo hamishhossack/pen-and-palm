@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
 import ServicesBlock from '../components/services/ServicesBlock';
-import ServiceBanner from '../components/services/ServiceBanner';
+import ServiceHero from '../components/services/ServiceHero';
 
 const Services = () => (
   <Root>
@@ -11,7 +11,7 @@ const Services = () => (
       <title>Services | Pen & Palm</title>
     </Head>
     <div>
-      <ServiceBanner />
+      <ServiceHero />
       <ServicesBlock>
         <h3 className="mb-4 font-family-secondary">Wedding Invitations</h3>
         <p>
