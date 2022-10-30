@@ -9,6 +9,22 @@
     }
     @include lg {
       padding-bottom: 144%;
+      margin-bottom: 15%;
+    }
+
+    @include xl {
+      padding-bottom: 112%;
+    }
+  }
+  .home-service-banner--image {
+    background: url('/images/services.jpeg') center center/cover;
+    padding-bottom: 100%;
+
+    @include md {
+      padding-bottom: 180%;
+    }
+    @include lg {
+      padding-bottom: 144%;
     }
 
     @include xl {

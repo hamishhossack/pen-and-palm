@@ -42,7 +42,7 @@ export default class ServicesBlock extends React.Component {
 
   render() {
     return (
-      <div className="py-5 mb-5 section-banner">
+      <div className="my-5 section-banner">
         <div className={`${this.props.bg ?? 'bg-brand300'} position-relative py-md-5`}>
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">
@@ -51,7 +51,7 @@ export default class ServicesBlock extends React.Component {
                 <div className={`col-md-5 ${this.props.imgLeft ? '' : 'offset-md-7'}`}>
                   <div className="position-relative">
                     <div className="position-md-absolute right-0 left-0 bottom-0">
-                      <div ref={this.image} className="service-banner--image" />
+                      <div ref={this.image} className={`${this.props.img}-banner--image`} />
                     </div>
                   </div>
                 </div>

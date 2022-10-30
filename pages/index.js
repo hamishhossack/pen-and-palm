@@ -19,8 +19,8 @@ const Home = () => (
     <HeroSection />
     <HomeBanner />
     <ServiceBanner />
-    <ContactBanner />
     <QuoteBanner />
+    <ContactBanner />
     <SocialMedia />
     <AsSeenInBanner />
     <Footer />
