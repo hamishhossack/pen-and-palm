@@ -19,7 +19,10 @@ const Home = () => (
     <HeroSection />
     <HomeBanner />
     <ServiceBanner />
-    <QuoteBanner />
+    <QuoteBanner
+      quote="Ilona is a perfectionist and an incredible artist at calligraphy."
+      by="EC"
+    />
     <ContactBanner />
     <SocialMedia />
     <AsSeenInBanner />

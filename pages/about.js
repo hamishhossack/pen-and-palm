@@ -3,16 +3,17 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
+import QuoteBanner from '../components/homepage/QuoteBanner';
 
 const About = () => (
   <Root>
     <Head>
       <title>About | Pen & Palm</title>
     </Head>
-    <div className="about-container">
+    <div>
       {/* Row */}
       <div className="row mt-5 pt-5 about-hero">
-        <div className="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-0 row-content">
+        <div className="col-12 col-md-10 col-lg-5 offset-lg-1 row-content">
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <h2 className="font-size-header font-family-secondary text-uppercase mb-4">
               Ilona Hossack-Smyth
@@ -32,31 +33,25 @@ const About = () => (
           </div>
         </div>
 
-        <div className="col-12 col-lg-3">
-          <div className="about-image h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <img src="/images/ilona.jpg" alt="Ilona" className="img-fluid" />
-            </div>
+        <div className="col-12 col-lg-6">
+          <div className="about-image">
+            <img
+              src="/images/about-ilona-shoot.jpeg"
+              alt="About Ilona - placement"
+              className="img-fluid"
+            />
           </div>
         </div>
       </div>
 
       {/* Row */}
-      <div className="row">
-        <div className="col-12 offset-lg-1 col-lg-3">
-          <div className="about-image h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <img
-                src="/images/ilona.jpg"
-                alt="Ilona"
-                width="350"
-                height="500"
-                layout="intrinsic"
-              />
-            </div>
+      <div className="row bg-brand300">
+        <div className="col-12 col-lg-5 row-content overflow-hidden">
+          <div className="about-image">
+            <img src="/images/about-table.jpeg" alt="About Ilona - table" layout="intrinsic" />
           </div>
         </div>
-        <div className="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-0 row-content">
+        <div className="py-5 col-12 col-md-10 col-lg-6 offset-md-1 row-content">
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <p className="font-size-subheader text-justify mb-4">
               When I&apos;m not designing or writing, I work as a music lawyer, and music continues
@@ -73,6 +68,31 @@ const About = () => (
               you have any questions <Link href="/contact">contact me</Link> - I&apos;d love to work
               with you.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Row */}
+      <div className="row py-5">
+        <div className="col-12 row-content">
+          <h2 className="text-center font-size-header font-family-secondary text-uppercase">
+            Wonderful Words
+          </h2>
+          <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
+            <QuoteBanner
+              quote="Our guests absolutely loved all the work Ilona had done and it made our day extra special! 100% recommend! The best of the best!"
+              by="AS"
+            />
+
+            <QuoteBanner
+              quote="Not only is Ilona talented but a lovely human being. The finish on the designs was great, and we were really happy with the end result."
+              by="CJ"
+            />
+
+            <QuoteBanner
+              quote="I've first hand seen the gorgeous work of Ilona for a few different weddings. Communication, interpretation and end product are all perfect. Ilona is so talented she can work in many different styles too. Will always be my stationery go to."
+              by="EJ"
+            />
           </div>
         </div>
       </div>
