@@ -1,49 +1,46 @@
+@mixin banner-image($image) {
+  background: url($image) center center/cover;
+  padding-bottom: 100%;
+  margin-bottom: 35%;
+
+  @include md {
+    padding-bottom: 180%;
+  }
+  @include lg {
+    padding-bottom: 144%;
+    margin-bottom: 15%;
+  }
+
+  @include xl {
+    padding-bottom: 112%;
+  }
+}
+
 .section-banner {
-  .contact-banner--image {
-    background: url('/images/contact.jpg') center center/cover;
-    padding-bottom: 100%;
-    margin-bottom: 35%;
-
-    @include md {
-      padding-bottom: 180%;
-    }
-    @include lg {
-      padding-bottom: 144%;
-      margin-bottom: 15%;
-    }
-
-    @include xl {
-      padding-bottom: 112%;
-    }
-  }
-  .home-service-banner--image {
-    background: url('/images/services.jpeg') center center/cover;
-    padding-bottom: 100%;
-
-    @include md {
-      padding-bottom: 180%;
-    }
-    @include lg {
-      padding-bottom: 144%;
-    }
-
-    @include xl {
-      padding-bottom: 112%;
-    }
-  }
-  .service-banner--image {
-    background: url('/images/contact.jpg') center center/cover;
-    padding-bottom: 100%;
-
-    @include md {
-      padding-bottom: 180%;
-    }
-    @include lg {
-      padding-bottom: 144%;
-    }
-
-    @include xl {
-      padding-bottom: 112%;
+  $imgs: (
+    'contact': '/images/contact.jpg',
+    'home-service': '/images/services.jpeg',
+    'service': '/images/contact.jpg',
+    'wedding-1': '/images/wedding-1.jpeg',
+    'wedding-2': '/images/wedding-2.jpeg',
+    'misc-1': '/images/misc-1.jpeg',
+    'misc-2': '/images/misc-2.jpeg',
+    'misc-3': '/images/misc-3.jpeg',
+    'misc-4': '/images/misc-4.jpeg',
+    'stationary-1': '/images/stationary-1.jpeg',
+    'stationary-2': '/images/stationary-2.jpeg',
+    'stationary-3': '/images/stationary-3.jpeg',
+    'stationary-4': '/images/stationary-4.jpeg',
+    'stationary-5': '/images/stationary-5.jpeg',
+    'hand-painted-1': '/images/hand-painted-1.jpeg',
+    'hand-painted-2': '/images/hand-painted-2.jpeg',
+    'hand-painted-3': '/images/hand-painted-3.jpeg',
+    'hand-painted-4': '/images/hand-painted-4.jpeg',
+    'hand-painted-5': '/images/hand-painted-5.jpeg',
+  );
+  @each $name, $image in $imgs {
+    .#{$name}-banner--image {
+      @include banner-image($image);
     }
   }
 }

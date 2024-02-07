@@ -23,8 +23,8 @@ const Home = () => (
       quote="Ilona is a perfectionist and an incredible artist at calligraphy."
       by="EC"
     />
-    <ContactBanner />
     <SocialMedia />
+    <ContactBanner />
     <AsSeenInBanner />
     <Footer />
   </Root>

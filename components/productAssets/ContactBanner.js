@@ -63,7 +63,7 @@ export default class ContactBanner extends React.Component {
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row py-5">
               <div className="col-12 col-md-6">
-                <form name="contact" netlify="true">
+                <form name="contact" method="POST" data-netlify="true">
                   <h3 className="mb-4 font-family-secondary">I&apos;d love to hear from you</h3>
                   <p className="mb-2">
                     You can get in touch via the form below or directly by emailing&nbsp;

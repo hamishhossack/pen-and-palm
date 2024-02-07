@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const imagesInfo = [
   {
@@ -29,22 +29,35 @@ export default class SocialMedia extends React.Component {
       <footer className="pt-5">
         <div className="custom-container px-3 mb-5">
           <div className="row">
-            {imagesInfo.map((item, i) => (
-              <a
-                key={item.image}
-                href="https://www.instagram.com/penandpalm/"
-                className="col-md col-sm-6 pb-3"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  style={{
-                    paddingBottom: '100%',
-                    background: `url("${item.image}") center center/cover`,
-                  }}
-                />
-              </a>
-            ))}
+            <Swiper
+              slidesPerView={5}
+              watchOverflow={false}
+              autoplay={{
+                delay: 1500,
+              }}
+              loop
+              allowTouchMove
+              speed={300}
+              effect="coverflow"
+            >
+              {imagesInfo.map((item, i) => (
+                <SwiperSlide key={item.image}>
+                  <a
+                    href="https://www.instagram.com/penandpalm/"
+                    className="col-md col-sm-6 pb-3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div
+                      style={{
+                        paddingBottom: '100%',
+                        background: `url("${item.image}") center center/cover`,
+                      }}
+                    />
+                  </a>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </footer>

@@ -4,12 +4,7 @@ import ServicesBlock from '../services/ServicesBlock';
 
 export default function ServiceBanner() {
   return (
-    <ServicesBlock
-      img="home-service"
-      bg="bg-brand600"
-      imgLeft
-      className="row justify-content-center align-items-center"
-    >
+    <ServicesBlock img="home-service" bg="bg-brand600" imgLeft>
       <p
         className="font-size-display1 font-family-secondary mt-5 text-center mx-auto"
         style={{ maxWidth: '53rem' }}

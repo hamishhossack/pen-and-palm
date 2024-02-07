@@ -1,4 +1,6 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCreative } from 'swiper/modules';
 
 export default class ServicesBlock extends React.Component {
   constructor(props) {
@@ -42,16 +44,36 @@ export default class ServicesBlock extends React.Component {
 
   render() {
     return (
-      <div className="my-5 section-banner">
-        <div className={`${this.props.bg ?? 'bg-brand300'} position-relative py-md-5`}>
+      <div className={`section-banner ${this.props.className || ''}`}>
+        <div className={`${this.props.bg || 'bg-brand300'} position-relative py-5 h-60vh flex`}>
           {/* Image Absolute */}
           <div className="position-md-absolute left-0 bottom-0 right-0">
-            <div className="custom-container px-0">
+            <div className="custom-container align px-0">
               <div className="row">
                 <div className={`col-md-5 ${this.props.imgLeft ? '' : 'offset-md-7'}`}>
                   <div className="position-relative">
                     <div className="position-md-absolute right-0 left-0 bottom-0">
-                      <div ref={this.image} className={`${this.props.img}-banner--image`} />
+                      {Array.isArray(this.props.img) ? (
+                        <div ref={this.image}>
+                          <Swiper
+                            slidesPerView={1}
+                            watchOverflow={false}
+                            loop
+                            allowTouchMove
+                            speed={300}
+                            effect="coverflow"
+                            modules={[EffectCreative]}
+                          >
+                            {this.props.img.map((image) => (
+                              <SwiperSlide key={image}>
+                                <div className={`${image}-banner--image`} />
+                              </SwiperSlide>
+                            ))}
+                          </Swiper>
+                        </div>
+                      ) : (
+                        <div ref={this.image} className={`${this.props.img}-banner--image`} />
+                      )}
                     </div>
                   </div>
                 </div>

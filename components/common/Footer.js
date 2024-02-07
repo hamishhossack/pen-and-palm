@@ -22,7 +22,7 @@ const Footer = () => (
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-3 offset-md-1">
-          <p className="font-family-secondary font-size-display1 mb-4">Follow us</p>
+          <div className="font-family-secondary font-size-display1 mb-4">&nbsp;</div>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
@@ -61,7 +61,7 @@ const Footer = () => (
           </div>
         </div>
         <div className="col-12 col-md-3 offset-md-1">
-          <p className="font-family-secondary font-size-display1 mb-4">The serious stuff..</p>
+          <div className="font-family-secondary font-size-display1 mb-4">&nbsp;</div>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <Link href="/privacy">
