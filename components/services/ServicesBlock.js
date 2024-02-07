@@ -60,6 +60,7 @@ export default class ServicesBlock extends React.Component {
                             watchOverflow={false}
                             loop
                             allowTouchMove
+                            autoplay={true}
                             speed={300}
                             effect="coverflow"
                             modules={[EffectCreative]}

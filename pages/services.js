@@ -29,7 +29,7 @@ const Services = () => (
         img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']}
         imgLeft
       >
-        <h3 className="mb-2 font-family-secondary">On the day stationary</h3>
+        <h3 className="mb-2 font-family-secondary">On the day stationery</h3>
         <p>
           From place cards to table names and everything in between! I can work with almost any
           material to create the look you require.

@@ -1,4 +1,5 @@
 import React from 'react';
+import { EffectCreative } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const imagesInfo = [
@@ -30,15 +31,14 @@ export default class SocialMedia extends React.Component {
         <div className="custom-container px-3 mb-5">
           <div className="row">
             <Swiper
+              className="w-100"
               slidesPerView={5}
               watchOverflow={false}
-              autoplay={{
-                delay: 1500,
-              }}
-              loop
+              autoplay={true}
+              loop={true}
               allowTouchMove
               speed={300}
-              effect="coverflow"
+              modules={[EffectCreative]}
             >
               {imagesInfo.map((item, i) => (
                 <SwiperSlide key={item.image}>
