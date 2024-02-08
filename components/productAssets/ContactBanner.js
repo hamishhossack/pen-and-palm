@@ -44,21 +44,6 @@ export default class ContactBanner extends React.Component {
     return (
       <div className="mb-5 section-banner">
         <div className="bg-brand300 position-relative py-md-5">
-          {/* Image Absolute */}
-          <div className="position-md-absolute left-0 bottom-0 right-0">
-            <div className="custom-container px-0">
-              <div className="row">
-                <div className="col-md-5 offset-md-7">
-                  <div className="position-relative">
-                    <div className="position-md-absolute right-0 left-0 bottom-0">
-                      <div ref={this.image} className="contact-banner--image" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Content */}
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row py-5">
@@ -92,7 +77,7 @@ export default class ContactBanner extends React.Component {
                     <label className="col-3">Message</label>
                     <textarea
                       className="col-9 form-control"
-                      rows="3"
+                      rows="6"
                       name="message"
                       placeholder="please include any requirements, ideas or preferences you have."
                     />
@@ -105,6 +90,9 @@ export default class ContactBanner extends React.Component {
                     </button>
                   </div>
                 </form>
+              </div>
+              <div className="col-md-6">
+                <div ref={this.image} className="home-contact-banner--image ml-md-4 mt-4" />
               </div>
             </div>
           </div>

@@ -27,12 +27,12 @@ export default class SocialMedia extends React.Component {
 
   render() {
     return (
-      <footer className="pt-5">
+      <div className="pt-md-5">
         <div className="custom-container px-3 mb-5">
           <div className="row">
             <Swiper
               className="w-100"
-              slidesPerView={5}
+              slidesPerView={3}
               watchOverflow={false}
               autoplay={true}
               loop={true}
@@ -60,7 +60,7 @@ export default class SocialMedia extends React.Component {
             </Swiper>
           </div>
         </div>
-      </footer>
+      </div>
     );
   }
 }

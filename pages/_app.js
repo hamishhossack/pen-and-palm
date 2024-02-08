@@ -1,10 +1,10 @@
 /* global process */
 import React, { useEffect, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
+import { Provider } from 'react-redux';
 
 import '../style/scss/style.scss';
 import { useStore } from '../store';
-import { Provider } from 'react-redux';
 import commerce from '../lib/commerce';
 import { setCustomer } from '../store/actions/authenticateActions';
 

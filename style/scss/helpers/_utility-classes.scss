@@ -248,6 +248,9 @@
 .bg-black700 {
   background: $black-700 !important;
 }
+.bg-black700-4 {
+  background: rgba($black-700, 0.6) !important;
+}
 .bg-black600 {
   background: $black-600 !important;
 }
@@ -1326,7 +1329,6 @@
 //// ----------------------------
 // Margin
 // ----------------------------
-
 .mt-6,
 .my-6 {
   margin-top: 2rem;

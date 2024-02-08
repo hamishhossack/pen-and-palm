@@ -6,7 +6,7 @@ import { Transition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { clearCustomer } from '../../store/actions/authenticateActions';
 
-const duration = 300;
+const duration = 150;
 
 const defaultStyle = {
   zIndex: '-1',
@@ -195,7 +195,7 @@ class Header extends Component {
             <img
               src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
               onClick={this.toggleMobileMenu}
-              className="w-32 mr-1 d-block d-sm-none"
+              className="w-32 mr-3 d-block d-sm-none"
               alt="Menu icon"
             />
             <Link href="/">
@@ -220,17 +220,9 @@ class Header extends Component {
               style={{
                 ...defaultStyle,
                 ...transitionStyles[state],
-                // Prevent gap being shown at bottom of mobile menu
-                top: '1em',
               }}
             >
-              <div
-                className="position-absolute left-0 right-0 h-100vh mobile-menu-inner bg-black700 d-flex flex-column justify-content-center"
-                style={{
-                  // Prevent mobile menu items (e.g. Home) being hidden behind navbar on small screen heights (e.g. iPhone4 landscape of 320px height)
-                  top: '4em',
-                }}
-              >
+              <div className="position-absolute left-0 right-0 h-100vh mobile-menu-inner bg-black700-4 d-flex flex-column justify-content-center">
                 {mobileMenuLinks.map((item, i) => (
                   <Link key={i} href={item.link}>
                     <a className="d-block mb-4 font-size-heading font-color-white text-center">

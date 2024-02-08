@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-12 col-sm-6 col-md-3 offset-md-1">
           <p className="font-family-secondary font-size-display1 mb-4">Pen & Palm</p>
-          <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
+          <div className="d-flex font-color-medium mb-5 pb-md-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <Link href="/about">
                 <a className="mb-3 d-block font-color-medium">About</a>
@@ -23,7 +23,7 @@ const Footer = () => (
         </div>
         <div className="col-12 col-sm-6 col-md-3 offset-md-1">
           <div className="font-family-secondary font-size-display1 mb-4">&nbsp;</div>
-          <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
+          <div className="d-flex font-color-medium mb-5 pb-md-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
                 href="https://www.instagram.com/penandpalm/"
@@ -61,8 +61,8 @@ const Footer = () => (
           </div>
         </div>
         <div className="col-12 col-md-3 offset-md-1">
-          <div className="font-family-secondary font-size-display1 mb-4">&nbsp;</div>
-          <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
+          <div className="h-sm-0 font-family-secondary font-size-display1 mb-4">&nbsp;</div>
+          <div className="d-flex font-color-medium mb-5 pb-md-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <Link href="/privacy">
                 <a className="mb-3 d-block font-color-medium">Privacy Policy</a>
