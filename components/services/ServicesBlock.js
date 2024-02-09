@@ -44,7 +44,7 @@ export default class ServicesBlock extends React.Component {
 
   renderImage() {
     return (
-      <div className="col-md-6 self-center">
+      <div id="image" className="col-md-6 self-center">
         <div ref={this.image} className="ml-md-4 mt-4">
           {Array.isArray(this.props.img) ? (
             <Swiper
@@ -52,7 +52,7 @@ export default class ServicesBlock extends React.Component {
               watchOverflow={false}
               loop
               allowTouchMove
-              autoplay={{ delay: 750, pauseOnMouseEnter: true }}
+              autoplay={{ delay: 1500, pauseOnMouseEnter: true }}
               speed={1000}
               modules={[Autoplay, EffectCreative]}
             >
@@ -76,9 +76,9 @@ export default class ServicesBlock extends React.Component {
         <div className={`${this.props.bg} position-relative py-md-5`}>
           {/* Content */}
           <div ref={this.contactContainer} className="custom-container py-md-5">
-            <div className="row">
+            <div className="row reorder">
               {this.props.imgLeft && this.renderImage()}
-              <div className="col-12 col-md-6 self-center">{this.props.children}</div>
+              <div className="col-12 col-md-6 self-center py-5">{this.props.children}</div>
               {!this.props.imgLeft && this.renderImage()}
             </div>
           </div>
