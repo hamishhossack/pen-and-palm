@@ -58,25 +58,25 @@ export default class ContactBanner extends React.Component {
                     Please include as much detail as possible about your special day.
                   </p>
                   <div className="row align-items-center mb-2">
-                    <label className="col-3">Name</label>
-                    <input className="col-9 form-control" type="text" name="name" />
+                    <label className="col-md-3 py-3">Name</label>
+                    <input className="col-md-9 form-control" type="text" name="name" />
                   </div>
                   <div className="row align-items-center mb-2">
-                    <label className="col-3">Email</label>
-                    <input className="col-9 form-control" type="text" name="email" />
+                    <label className="col-md-3 py-3">Email</label>
+                    <input className="col-md-9 form-control" type="text" name="email" />
                   </div>
                   <div className="row align-items-center mb-2">
-                    <label className="col-3">Event date</label>
-                    <input className="col-9 form-control" type="text" name="event" />
+                    <label className="col-md-3 py-3">Event date</label>
+                    <input className="col-md-9 form-control" type="text" name="event" />
                   </div>
                   <div className="row align-items-center mb-2">
-                    <label className="col-3">Guest count</label>
-                    <input className="col-9 form-control" type="number" name="guests" />
+                    <label className="col-md-3 py-3">Guest count</label>
+                    <input className="col-md-9 form-control" type="number" name="guests" />
                   </div>
                   <div className="row align-items-center mb-2">
-                    <label className="col-3">Message</label>
+                    <label className="col-md-3 py-3">Message</label>
                     <textarea
-                      className="col-9 form-control"
+                      className="col-md-9 form-control"
                       rows="6"
                       name="message"
                       placeholder="please include any requirements, ideas or preferences you have."
