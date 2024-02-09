@@ -43,7 +43,7 @@ export default class ContactBanner extends React.Component {
   render() {
     return (
       <div className="mb-5 section-banner">
-        <div className="bg-brand300 position-relative py-md-5">
+        <div className="position-relative py-md-5">
           {/* Content */}
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row py-5">

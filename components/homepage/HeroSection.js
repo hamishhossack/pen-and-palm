@@ -1,21 +1,7 @@
 import React from 'react';
-import { Autoplay, EffectFade, Swiper as SwiperCore } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper/modules';
 
-const params = {
-  slidesPerView: 1,
-  watchOverflow: false,
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
-  allowTouchMove: false,
-  speed: 1000,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
-};
 const images = [
   '/images/home-1.jpg',
   '/images/home-2.jpg',
@@ -24,11 +10,24 @@ const images = [
 ];
 
 export default function HeroSection() {
-  SwiperCore.use([Autoplay, EffectFade]);
   return (
     <div className="hero-section position-relative">
-      <Swiper {...params}>
-        {images.map((image, index) => (
+      <Swiper
+        slidesPerView={1}
+        watchOverflow={false}
+        autoplay={{
+          delay: 5000,
+        }}
+        loop={true}
+        allowTouchMove={false}
+        speed={1000}
+        effect="fade"
+        fadeEffect={{
+          crossFade: true,
+        }}
+        modules={[Autoplay, EffectFade]}
+      >
+        {images.map((image) => (
           <SwiperSlide key={image}>
             <div
               className="hero-slide d-flex align-items-center justify-content-center flex-column font-color-white py-5"

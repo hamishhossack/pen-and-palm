@@ -2,22 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCreative } from 'swiper/modules';
 
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
 import QuoteBanner from '../components/homepage/QuoteBanner';
-
-const params = {
-  slidesPerView: 1,
-  watchOverflow: false,
-  autoplay: {
-    delay: 1500,
-  },
-  loop: true,
-  allowTouchMove: false,
-  speed: 500,
-  effect: 'coverflow',
-};
 
 const About = () => (
   <Root>
@@ -33,9 +22,9 @@ const About = () => (
               Ilona Hossack-Smyth
             </h2>
             <p className="font-size-subheader mb-4">
-              I am a proud small business owner based in South East London, who has always had a
-              keen interest in design and stationery. My calligraphy journey began whilst planning
-              my own wedding - I learnt so that I could create our wedding stationery and on-the-day
+              I am a proud small business owner based in Surrey, who has always had a keen interest
+              in design and stationery. My calligraphy journey began in 2020 whilst planning my own
+              wedding - I learnt so that I could create our wedding stationery and on-the-day
               signage.
             </p>
             <p className="font-size-subheader mb-4">
@@ -47,7 +36,7 @@ const About = () => (
           </div>
         </div>
 
-        <div className="col-12 col-lg-5 align-center">
+        <div className="col-12 col-lg-5 self-center">
           <div className="about-image my-lg">
             <img
               src="/images/about-ilona-shoot.jpeg"
@@ -60,7 +49,7 @@ const About = () => (
 
       {/* Row */}
       <div className="row bg-brand300">
-        <div className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden align-center">
+        <div className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center">
           <div className="about-image my-lg">
             <img src="/images/about-table.jpeg" alt="About Ilona - table" layout="intrinsic" />
           </div>
@@ -69,13 +58,12 @@ const About = () => (
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <p className="font-size-subheader mb-4">
               When I&apos;m not designing or writing, I work as a music lawyer, and music continues
-              to be one of the most important things in my life. However, I&apos;m glad to have
+              to be one of the most important things in my life. However, I&pos;m glad to have
               reclaimed my creative flair and am finally putting my Graphic Design and Art GCSES in
-              practice!
+              practice! I&pos;m also mum to my beautiful son, Zack.
             </p>
             <p className="font-size-subheader mb-4">
-              Additionally, I have the pleasure of teaching modern calligraphy workshops (link to
-              workshops tab, below) for beginners at local shop, Beldi Maison.
+              I have also taught multiple modern calligraphy workshops for beginners.
             </p>
             <p className="font-size-subheader mb-4">
               I can only take on a limited number of weddings per year, so please get in touch if
@@ -92,25 +80,20 @@ const About = () => (
           <h2 className="text-center font-size-header font-family-secondary text-uppercase">
             Wonderful Words
           </h2>
-          <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
-            <Swiper {...params} style={{ height: '300px' }}>
-              <SwiperSlide>
-                <QuoteBanner
-                  quote="Our guests absolutely loved all the work Ilona had done and it made our day extra special! 100% recommend! The best of the best!"
-                  by="AS"
-                />
-              </SwiperSlide>
-              <QuoteBanner
-                quote="Not only is Ilona talented but a lovely human being. The finish on the designs was great, and we were really happy with the end result."
-                by="CJ"
-              />
-              <SwiperSlide>
-                <QuoteBanner
-                  quote="I've first hand seen the gorgeous work of Ilona for a few different weddings. Communication, interpretation and end product are all perfect. Ilona is so talented she can work in many different styles too. Will always be my stationery go to."
-                  by="EJ"
-                />
-              </SwiperSlide>
-            </Swiper>
+          <div className="d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
+            <QuoteBanner
+              quote="Our guests absolutely loved all the work Ilona had done and it made our day
+            extra special! 100% recommend! The best of the best!"
+              by="AS"
+            />
+            <QuoteBanner
+              quote="Not only is Ilona talented but a lovely human being. The finish on the designs was great, and we were really happy with the end result."
+              by="CJ"
+            />
+            <QuoteBanner
+              quote="I've first hand seen the gorgeous work of Ilona for a few different weddings. Communication, interpretation and end product are all perfect. Ilona is so talented she can work in many different styles too. Will always be my stationery go to."
+              by="EJ"
+            />
           </div>
         </div>
       </div>

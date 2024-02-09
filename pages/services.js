@@ -12,7 +12,7 @@ const Services = () => (
     </Head>
     <div>
       <ServiceHero />
-      <ServicesBlock img={['wedding-1', 'wedding-2']}>
+      <ServicesBlock bg="bg-brand400" img={['wedding-1', 'wedding-2']}>
         <h3 className="mb-4 font-family-secondary">Wedding Invitations</h3>
         <p>
           Your wedding invitations are likely to be the first glimpse into your wedding day that
@@ -24,11 +24,7 @@ const Services = () => (
           embellishments like wax seals and silk ribbon.
         </p>
       </ServicesBlock>
-      <ServicesBlock
-        bg="bg-brand400"
-        img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']}
-        imgLeft
-      >
+      <ServicesBlock img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']} imgLeft>
         <h3 className="mb-2 font-family-secondary">On the day stationery</h3>
         <p>
           From place cards to table names and everything in between! I can work with almost any
