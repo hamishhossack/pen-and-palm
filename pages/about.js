@@ -48,8 +48,8 @@ const About = () => (
       </div>
 
       {/* Row */}
-      <div className="row bg-brand300">
-        <div className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center">
+      <div className="row bg-brand300 reorder">
+        <div className="image col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center">
           <div className="about-image my-lg">
             <img src="/images/about-table.jpeg" alt="About Ilona - table" layout="intrinsic" />
           </div>
