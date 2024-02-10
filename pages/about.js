@@ -57,18 +57,17 @@ const About = () => (
         <div className="py-5 col-12 col-md-10 col-lg-5 row-content">
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <p className="font-size-subheader mb-4">
-              When I'm not designing or writing, I work as a music lawyer, and music continues
-              to be one of the most important things in my life. However, I'm glad to have
+              When I&apos;m not designing or writing, I work as a music lawyer, and music continues
+              to be one of the most important things in my life. However, I&apos;m glad to have
               reclaimed my creative flair and am finally putting my Graphic Design and Art GCSES in
-              practice! I'm also mum to my beautiful son, Zack.
+              practice! I&apos;m also mum to my beautiful son, Zack.
             </p>
             <p className="font-size-subheader mb-4">
               I have also taught multiple modern calligraphy workshops for beginners.
             </p>
             <p className="font-size-subheader mb-4">
               I can only take on a limited number of weddings per year, so please get in touch if
-              you have any questions <Link href="/contact">contact me</Link> - I'd love to work
-              with you.
+              you have any questions <Link href="/contact">contact me</Link> - I&apos;d love to work with you.
             </p>
           </div>
         </div>
