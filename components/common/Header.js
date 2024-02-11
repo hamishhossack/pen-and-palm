@@ -174,42 +174,49 @@ class Header extends Component {
     const { transparent, cart } = this.props;
 
     return (
-      <header className="position-fixed top-0 left-0 right-0 no-print scallop">
-        <Cart isOpen={showCart} toggle={(value) => this.toggleCart(value)} />
-        <div
-          ref={this.header}
-          className={`d-flex header align-items-center justify-content-between position-relative ${
-            transparent ? '' : 'invert'
-          }`}
-        >
-          <div className="d-none d-sm-flex align-items-center">
-            <Link href="/about">
-              <a className="mr-4 font-color-black">About</a>
-            </Link>
+      <header
+        ref={this.header}
+        className={`position-fixed top-0 left-0 right-0 no-print ${transparent ? '' : 'invert'}`}
+      >
+        <div>
+          <Cart isOpen={showCart} toggle={(value) => this.toggleCart(value)} />
+          <div
+            className={'d-flex header align-items-center justify-content-between position-relative'}
+          >
+            <div className="d-none d-sm-flex align-items-center">
+              <Link href="/about">
+                <a className="mr-4 font-color-black">About</a>
+              </Link>
 
-            <Link href="/services">
-              <a className="font-color-black">Services</a>
-            </Link>
-          </div>
-          <div className="logo-container">
-            <img
-              src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
-              onClick={this.toggleMobileMenu}
-              className="w-32 mr-3 d-block d-sm-none"
-              alt="Menu icon"
-            />
-            <Link href="/">
-              <a>
-                <img src="/images/logo.svg" className="logo cursor-pointer" alt="Pen & Palm Logo" />
-              </a>
-            </Link>
-          </div>
+              <Link href="/services">
+                <a className="font-color-black">Services</a>
+              </Link>
+            </div>
+            <div className="logo-container">
+              <img
+                src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
+                onClick={this.toggleMobileMenu}
+                className="w-32 mr-3 d-block d-sm-none"
+                alt="Menu icon"
+              />
+              <Link href="/">
+                <a>
+                  <img
+                    src="/images/logo.svg"
+                    className="logo cursor-pointer"
+                    alt="Pen & Palm Logo"
+                  />
+                </a>
+              </Link>
+            </div>
 
-          <div className="d-none d-sm-flex">
-            <Link href="/contact">
-              <a className="font-color-black">Contact</a>
-            </Link>
+            <div className="d-none d-sm-flex">
+              <Link href="/contact">
+                <a className="font-color-black">Contact</a>
+              </Link>
+            </div>
           </div>
+          <div className="scallop-header-down"></div>
         </div>
 
         {/* Mobile Menu */}
