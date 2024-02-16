@@ -50,6 +50,7 @@ export default class ServicesBlock extends React.Component {
             <Swiper
               slidesPerView={1}
               watchOverflow={false}
+              centeredSlides={true}
               loop
               allowTouchMove
               autoplay={{ delay: 1500, pauseOnMouseEnter: true }}
@@ -72,8 +73,12 @@ export default class ServicesBlock extends React.Component {
 
   render() {
     return (
-      <div className="mb-5 section-banner">
-        <div className={`${this.props.bg} position-relative py-md-5`}>
+      <div className="section-banner">
+        <div
+          className={`${this.props.bg} position-relative py-5 scallop-down-${
+            this.props.otherBg || 'white'
+          }`}
+        >
           {/* Content */}
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row reorder">

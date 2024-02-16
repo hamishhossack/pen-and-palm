@@ -1350,16 +1350,14 @@
   margin: 80px 0;
 }
 
-.scallop-down {
+@mixin scallop($c) {
   content: ' ';
   display: block;
+  position: absolute;
   height: 50px;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(255, 255, 255, 0.8) 25%,
-    rgba(255, 255, 255, 0.8) 50%,
-    transparent 0%
-  );
+  width: 100%;
+  top: 0px;
+  background: radial-gradient(circle at 50% 0%, $c 25%, $c 50%, transparent 0%);
   background-size: 49px 100%;
   -webkit-background-size: 49px 100%;
 }

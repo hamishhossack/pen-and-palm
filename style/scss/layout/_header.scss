@@ -6,7 +6,7 @@ header {
   .header {
     background: rgba(255, 255, 255, 0.8) 50%;
     filter: none;
-    transition: background-color 0.3s ease-in, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in;
   }
 
   .scallop-header-down {
@@ -18,28 +18,25 @@ header {
     );
     background-size: 49px 100%;
     -webkit-background-size: 49px 100%;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
   }
 }
 
 .scallop-header-down {
-  content: ' ';
   display: block;
   height: 50px;
-  background: radial-gradient(
-    circle at 50% 0%,
-    transparent 25%,
-    transparent 50%,
-    transparent 0%
-  );
+  background: transparent;
   background-size: 49px 100%;
   -webkit-background-size: 49px 100%;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
 }
 
 .header {
-  padding: 1.5rem 3rem 1rem;
+  padding: 1rem 3rem 0.5rem;
   background-color: transparent;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
-    filter 0.1s linear 0.3s;
+  transition: background-color 0.3s ease-in-out, filter 0.1s linear 0.2s;
   filter: invert(1);
 
   @include small-xs {

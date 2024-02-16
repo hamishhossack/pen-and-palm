@@ -62,6 +62,18 @@
   }
 }
 
+.scallop-down-white:before {
+  @include scallop(white);
+}
+
+.scallop-down-bg-brand400:before {
+  @include scallop($brand-400);
+}
+
+.scallop-down-bg-brand600:before {
+  @include scallop($brand-600);
+}
+
 @media (max-width: 768px) {
   .reorder {
     display: flex;

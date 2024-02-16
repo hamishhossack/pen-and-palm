@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => (
-  <footer className="bg-brand300 mt-5 pt-5">
+  <footer className="bg-brand300 scallop-down-white position-relative mt-5 pt-5">
     <div className="custom-container py-5">
       <div className="row">
         <div className="col-12 col-sm-6 col-md-3 offset-md-1">

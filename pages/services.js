@@ -24,7 +24,11 @@ const Services = () => (
           embellishments like wax seals and silk ribbon.
         </p>
       </ServicesBlock>
-      <ServicesBlock img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']} imgLeft>
+      <ServicesBlock
+        otherBg="bg-brand400"
+        img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']}
+        imgLeft
+      >
         <h3 className="mb-2 font-family-secondary">On the day stationery</h3>
         <p>
           From place cards to table names and everything in between! I can work with almost any
@@ -64,7 +68,7 @@ const Services = () => (
           displaying signage at your wedding, by using everyday items you already have.
         </p>
       </ServicesBlock>
-      <ServicesBlock bg="bg-white" img={['misc-1', 'misc-2']} imgLeft>
+      <ServicesBlock bg="bg-white" otherBg="bg-brand600" img={['misc-1', 'misc-2']} imgLeft>
         <h3 className="mb-4 font-family-secondary">Miscellaneous</h3>
         <p>
           As a calligrapher, I love to apply beautiful calligraphy to anything I can get my hands

@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 class QuoteBanner extends Component {
   render() {
     return (
-      <div className="py-md-5 my-5">
-        <p className="font-size-display2 font-italic my-3 text-center font-family-secondary">
+      <div className="py-5 scallop-down-bg-brand600 position-relative">
+        <p className="py-5 font-size-display2 font-italic my-3 text-center font-family-secondary">
           &ldquo;{this.props.quote}&rdquo;
           <br />- {this.props.by}
         </p>
