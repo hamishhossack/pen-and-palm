@@ -1265,6 +1265,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 
 //---------------------------
 // Text Decoration

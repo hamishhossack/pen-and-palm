@@ -48,7 +48,12 @@ export default class ContactBanner extends React.Component {
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row py-5">
               <div className="col-12 col-md-6">
-                <form name="contact" method="POST" data-netlify="true">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-recaptcha="true"
+                >
                   <h3 className="mb-4 font-family-secondary">I&apos;d love to hear from you</h3>
                   <p className="mb-2">
                     You can get in touch via the form below or directly by emailing&nbsp;
@@ -69,6 +74,11 @@ export default class ContactBanner extends React.Component {
                     <label className="col-md-3 py-3">Event date</label>
                     <input className="col-md-9 form-control" type="text" name="event" />
                   </div>
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div className="row align-items-center mb-2">
                     <label className="col-md-3 py-3">Guest count</label>
                     <input className="col-md-9 form-control" type="number" name="guests" />
@@ -82,9 +92,15 @@ export default class ContactBanner extends React.Component {
                       placeholder="please include any requirements, ideas or preferences you have."
                     />
                   </div>
+                  <div className="row align-items-center mb-2">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
 
                   <div className="row">
-                    <button className="col-4 ml-auto py-3 align-items-center font-color-black borderbottom border-color-black">
+                    <button
+                      type="submit"
+                      className="col-4 ml-auto py-3 align-items-center font-color-black borderbottom border-color-black"
+                    >
                       <span className="mr-3">Send</span>
                       <img src="/icon/arrow-long-right.svg" />
                     </button>
