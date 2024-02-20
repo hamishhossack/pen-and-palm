@@ -51,6 +51,7 @@ export default class ContactBanner extends React.Component {
                 <form
                   name={this.props.formName}
                   method="POST"
+                  action="/success"
                   data-netlify="true"
                   data-netlify-recaptcha="true"
                   data-netlify-honeypot="bot-field"
