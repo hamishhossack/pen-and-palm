@@ -24,7 +24,7 @@ const Home = () => (
       by="EC"
     />
     <SocialMedia />
-    <ContactBanner />
+    <ContactBanner formName="home-form" />
     <AsSeenInBanner />
     <Footer />
   </Root>

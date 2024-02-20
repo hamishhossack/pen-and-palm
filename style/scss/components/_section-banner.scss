@@ -66,6 +66,10 @@
   @include scallop(white);
 }
 
+.scallop-down-bg-brand300:before {
+  @include scallop($brand-300);
+}
+
 .scallop-down-bg-brand400:before {
   @include scallop($brand-400);
 }

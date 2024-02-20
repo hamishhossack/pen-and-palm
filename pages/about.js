@@ -48,8 +48,11 @@ const About = () => (
       </div>
 
       {/* Row */}
-      <div className="row bg-brand300 reorder">
-        <div id="image" className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center">
+      <div className="row bg-brand300 reorder scallop-down-white position-relative">
+        <div
+          id="image"
+          className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center"
+        >
           <div className="about-image my-lg">
             <img src="/images/about-table.jpeg" alt="About Ilona - table" layout="intrinsic" />
           </div>
@@ -67,14 +70,15 @@ const About = () => (
             </p>
             <p className="font-size-subheader mb-4">
               I can only take on a limited number of weddings per year, so please get in touch if
-              you have any questions <Link href="/contact">contact me</Link> - I&apos;d love to work with you.
+              you have any questions <Link href="/contact">contact me</Link> - I&apos;d love to work
+              with you.
             </p>
           </div>
         </div>
       </div>
 
       {/* Row */}
-      <div className="row py-5">
+      <div className="row scallop-down-bg-brand300 py-5 position-relative">
         <div className="col-12 row-content">
           <h2 className="text-center font-size-header font-family-secondary text-uppercase">
             Wonderful Words
