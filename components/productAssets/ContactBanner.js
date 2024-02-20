@@ -78,11 +78,6 @@ export default class ContactBanner extends React.Component {
                     <label className="col-md-3 py-3">Event date</label>
                     <input className="col-md-9 form-control" type="text" name="event" />
                   </div>
-                  <p className="hidden">
-                    <label>
-                      Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                    </label>
-                  </p>
                   <div className="row align-items-center mb-2">
                     <label className="col-md-3 py-3">Guest count</label>
                     <input className="col-md-9 form-control" type="number" name="guests" />
@@ -99,6 +94,11 @@ export default class ContactBanner extends React.Component {
                   <div className="row align-items-center mb-2">
                     <div data-netlify-recaptcha="true"></div>
                   </div>
+                  <p className="hidden">
+                    <label>
+                      Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                    </label>
+                  </p>
 
                   <div className="row">
                     <button
