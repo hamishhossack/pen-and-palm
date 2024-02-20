@@ -12,7 +12,7 @@ const Home = () => (
       <title>Collection</title>
     </Head>
     <Collections />
-    <ContactBanner />
+    <ContactBanner formName="collection-form" />
     <SocialMedia />
     <Footer />
   </Root>

@@ -49,11 +49,14 @@ export default class ContactBanner extends React.Component {
             <div className="row py-5">
               <div className="col-12 col-md-6">
                 <form
-                  name="contact"
+                  name={this.props.formName}
                   method="POST"
                   data-netlify="true"
                   data-netlify-recaptcha="true"
+                  data-netlify-honeypot="bot-field"
+                  netlify
                 >
+                  <input type="hidden" name="form-name" value={this.props.formName} />
                   <h3 className="mb-4 font-family-secondary">I&apos;d love to hear from you</h3>
                   <p className="mb-2">
                     You can get in touch via the form below or directly by emailing&nbsp;
@@ -76,7 +79,7 @@ export default class ContactBanner extends React.Component {
                   </div>
                   <p className="hidden">
                     <label>
-                      Don’t fill this out if you’re human: <input name="bot-field" />
+                      Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
                     </label>
                   </p>
                   <div className="row align-items-center mb-2">

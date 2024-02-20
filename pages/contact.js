@@ -4,16 +4,16 @@ import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
 import ContactBanner from '../components/productAssets/ContactBanner';
 
-const About = () => (
+const Contact = () => (
   <Root>
     <Head>
       <title>Contact | Pen & Palm</title>
     </Head>
     <div>
-      <ContactBanner />
+      <ContactBanner formName="contact-form" />
     </div>
     <Footer />
   </Root>
 );
 
-export default About;
+export default Contact;

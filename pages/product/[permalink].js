@@ -130,7 +130,7 @@ export default function Product() {
 
       <ClientReview />
       <SuggestedProducts />
-      <ContactBanner />
+      <ContactBanner formName="product-form" />
       <SocialMedia />
       <Footer />
     </Root>
