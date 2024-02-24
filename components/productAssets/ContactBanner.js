@@ -60,9 +60,8 @@ export const ContactBanner = ({ formName }) => {
                 <form
                   name={formName}
                   method="post"
-                  data-netlify="true"
-                  data-netlify-recaptcha="true"
-                  data-netlify-honeypot="bot-field"
+                  // data-netlify-recaptcha="true"
+                  // data-netlify-honeypot="bot-field"
                   netlify
                   onSubmit={handleSubmit}
                 >
