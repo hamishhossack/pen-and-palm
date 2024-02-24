@@ -54,6 +54,7 @@ export const ContactBanner = ({ formName }) => {
             <div className="col-12 col-md-6">
               <form
                 name={formName}
+                method="post"
                 data-netlify="true"
                 data-netlify-recaptcha="true"
                 data-netlify-honeypot="bot-field"
