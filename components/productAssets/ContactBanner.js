@@ -59,10 +59,9 @@ export const ContactBanner = ({ formName }) => {
               ) : (
                 <form
                   name={formName}
-                  method="post"
-                  // data-netlify-recaptcha="true"
-                  // data-netlify-honeypot="bot-field"
-                  netlify
+                  method="POST"
+                  data-netlify-recaptcha="true"
+                  data-netlify="true"
                   onSubmit={handleSubmit}
                 >
                   <input type="hidden" name="form-name" value={formName} />
@@ -99,7 +98,7 @@ export const ContactBanner = ({ formName }) => {
                       placeholder="please include any requirements, ideas or preferences you have."
                     />
                   </div>
-
+                  <div data-netlify-recaptcha="true"></div>
                   <div className="row">
                     <button
                       type="submit"
