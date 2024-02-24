@@ -99,14 +99,6 @@ export const ContactBanner = ({ formName }) => {
                       placeholder="please include any requirements, ideas or preferences you have."
                     />
                   </div>
-                  <div className="row align-items-center mb-2">
-                    <div data-netlify-recaptcha="true"></div>
-                  </div>
-                  <p className="hidden">
-                    <label>
-                      Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                    </label>
-                  </p>
 
                   <div className="row">
                     <button
