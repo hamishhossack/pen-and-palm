@@ -57,13 +57,7 @@ export const ContactBanner = ({ formName }) => {
                   <p className="mb-4">I aim to reply with 48 hours</p>
                 </>
               ) : (
-                <form
-                  name={formName}
-                  method="POST"
-                  data-netlify-recaptcha="true"
-                  data-netlify="true"
-                  onSubmit={handleSubmit}
-                >
+                <form name={formName} method="POST" data-netlify="true" onSubmit={handleSubmit}>
                   <input type="hidden" name="form-name" value={formName} />
                   <h3 className="mb-4 font-family-secondary">I&apos;d love to hear from you</h3>
                   <p className="mb-2">
@@ -98,7 +92,6 @@ export const ContactBanner = ({ formName }) => {
                       placeholder="please include any requirements, ideas or preferences you have."
                     />
                   </div>
-                  <div data-netlify-recaptcha="true"></div>
                   <div className="row">
                     <button
                       type="submit"
