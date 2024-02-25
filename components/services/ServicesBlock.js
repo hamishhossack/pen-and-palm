@@ -44,7 +44,7 @@ export default class ServicesBlock extends React.Component {
 
   renderImage() {
     return (
-      <div id="image" className="col-md-6 self-center">
+      <div id="image" className="col-md-7 self-center">
         <div ref={this.image} className="ml-md-4 mt-4">
           {Array.isArray(this.props.img) ? (
             <Swiper
@@ -83,7 +83,7 @@ export default class ServicesBlock extends React.Component {
           <div ref={this.contactContainer} className="custom-container py-md-5">
             <div className="row reorder">
               {this.props.imgLeft && this.renderImage()}
-              <div className="col-12 col-md-6 self-center py-5">{this.props.children}</div>
+              <div className="col-12 col-md-5 self-center py-5">{this.props.children}</div>
               {!this.props.imgLeft && this.renderImage()}
             </div>
           </div>

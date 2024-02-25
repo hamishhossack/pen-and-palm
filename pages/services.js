@@ -54,7 +54,6 @@ const Services = () => (
           'stationary-13',
           'stationary-14',
           'stationary-15',
-          'stationary-16',
         ]}
         imgLeft
       >
