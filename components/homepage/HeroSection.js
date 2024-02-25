@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 const images = [
   '/images/home-1.jpg',
@@ -22,9 +22,6 @@ export default function HeroSection() {
         allowTouchMove={false}
         speed={1000}
         effect="fade"
-        fadeEffect={{
-          crossFade: true,
-        }}
         modules={[Autoplay, EffectFade]}
       >
         {images.map((image) => (

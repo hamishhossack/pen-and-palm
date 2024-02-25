@@ -56,8 +56,8 @@ export default class Success extends React.Component {
             <div className="custom-container py-md-5">
               <div className="row py-5">
                 <div className="col-12 col-md-6">
-                  <h2>Thanks for you message!</h2>
-                  <p>I aim to get back in touch within 48 hours.</p>
+                  <h2>Thank you for your enquiry!</h2>
+                  <p>I&apos;ll be in touch with you within 48 hours.</p>
                 </div>
                 <div className="col-md-6">
                   <div ref={this.image} className="home-contact-banner--image ml-md-4 mt-4" />

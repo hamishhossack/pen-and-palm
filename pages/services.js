@@ -12,7 +12,19 @@ const Services = () => (
     </Head>
     <div>
       <ServiceHero />
-      <ServicesBlock bg="bg-brand400" img={['wedding-1', 'wedding-2']}>
+      <ServicesBlock
+        bg="bg-brand400"
+        img={[
+          'wedding-1',
+          'wedding-2',
+          'wedding-3',
+          'wedding-4',
+          'wedding-5',
+          'wedding-6',
+          'wedding-7',
+          'wedding-8',
+        ]}
+      >
         <h3 className="mb-4 font-family-secondary">Wedding Invitations</h3>
         <p>
           Your wedding invitations are likely to be the first glimpse into your wedding day that
@@ -26,7 +38,24 @@ const Services = () => (
       </ServicesBlock>
       <ServicesBlock
         otherBg="bg-brand400"
-        img={['stationary-1', 'stationary-2', 'stationary-3', 'stationary-4']}
+        img={[
+          'stationary-1',
+          'stationary-2',
+          'stationary-3',
+          'stationary-4',
+          'stationary-5',
+          'stationary-6',
+          'stationary-7',
+          'stationary-8',
+          'stationary-9',
+          'stationary-10',
+          'stationary-11',
+          'stationary-12',
+          'stationary-13',
+          'stationary-14',
+          'stationary-15',
+          'stationary-16',
+        ]}
         imgLeft
       >
         <h3 className="mb-2 font-family-secondary">On the day stationery</h3>
@@ -43,6 +72,11 @@ const Services = () => (
           'hand-painted-3',
           'hand-painted-4',
           'hand-painted-5',
+          'hand-painted-6',
+          'hand-painted-7',
+          'hand-painted-8',
+          'hand-painted-9',
+          'hand-painted-10',
         ]}
       >
         <h3 className="mb-4 font-family-secondary">Hand painted Signage</h3>
@@ -68,7 +102,22 @@ const Services = () => (
           displaying signage at your wedding, by using everyday items you already have.
         </p>
       </ServicesBlock>
-      <ServicesBlock bg="bg-white" otherBg="bg-brand600" img={['misc-1', 'misc-2']} imgLeft>
+      <ServicesBlock
+        bg="bg-white"
+        otherBg="bg-brand600"
+        img={[
+          'misc-1',
+          'misc-2',
+          'misc-3',
+          'misc-4',
+          'misc-5',
+          'misc-6',
+          'misc-7',
+          'misc-8',
+          'misc-9',
+        ]}
+        imgLeft
+      >
         <h3 className="mb-4 font-family-secondary">Miscellaneous</h3>
         <p>
           As a calligrapher, I love to apply beautiful calligraphy to anything I can get my hands
