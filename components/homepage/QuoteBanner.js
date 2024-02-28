@@ -5,7 +5,7 @@ class QuoteBanner extends Component {
   render() {
     return (
       <div className="py-5 position-relative">
-        <p className="py-5 font-size-display2 font-italic my-3 text-center font-family-secondary">
+        <p className="font-size-display1 font-italic my-3 text-center font-family-secondary">
           &ldquo;{this.props.quote}&rdquo;
           <br />- {this.props.by}
         </p>

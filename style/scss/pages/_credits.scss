@@ -1,0 +1,24 @@
+.credits {
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+
+  > * {
+    font-size: large;
+    margin: 0.5rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+.dot {
+  background-color: black;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+}

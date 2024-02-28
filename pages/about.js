@@ -16,7 +16,7 @@ const About = () => (
     <div>
       {/* Row */}
       <div className="row mt-5 pt-5 about-hero">
-        <div className="col-12 col-md-10 col-lg-5 offset-lg-1 row-content">
+        <div className="col-12 col-md-10 col-lg-6 offset-lg-1 row-content">
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <h2 className="font-size-header font-family-secondary text-uppercase mb-4">
               Ilona Hossack-Smyth
@@ -36,10 +36,10 @@ const About = () => (
           </div>
         </div>
 
-        <div className="col-12 col-lg-5 self-center">
+        <div className="col-12 col-lg-4 self-center">
           <div className="about-image my-lg">
             <img
-              src="/images/about-ilona-shoot.jpeg"
+              src="/images/Ilona-and-Hamish-343.jpg"
               alt="About Ilona - placement"
               className="img-fluid"
             />
@@ -51,13 +51,17 @@ const About = () => (
       <div className="row bg-brand300 reorder scallop-down-white position-relative">
         <div
           id="image"
-          className="col-12 col-lg-5 offset-lg-1 row-content overflow-hidden self-center"
+          className="col-12 col-lg-4 offset-lg-1 row-content overflow-hidden self-center"
         >
           <div className="about-image my-lg">
-            <img src="/images/about-table.jpeg" alt="About Ilona - table" layout="intrinsic" />
+            <img
+              src="/images/ilona-at-the-beach.jpeg"
+              alt="About Ilona - at the beach"
+              className="img-fluid"
+            />
           </div>
         </div>
-        <div className="py-5 col-12 col-md-10 col-lg-5 row-content">
+        <div className="py-5 col-12 col-md-10 col-lg-7 row-content">
           <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
             <p className="font-size-subheader mb-4">
               When I&apos;m not designing or writing, I work as a music lawyer, and music continues

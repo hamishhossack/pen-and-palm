@@ -12,160 +12,137 @@ const Terms = () => {
         <div className="custom-container py-md-5">
           <div className="row py-5">
             <div className="col-12">
-              <h3>Our contact details Ilona Smyth t/a Pen and Palm</h3>
-
-              <p>High Grove, Clovelly Road Hindhead GU26 6RW</p>
-
-              <a href="mailto:info@penandpalm.com">info@penandpalm.com</a>
-            </div>
-          </div>
-          <div className="row py-5">
-            <div className="col-12">
+              <h1>Pen &amp; Palm Order Terms &amp; Conditions</h1>
               <p>
-                <i>Privacy policy updated 24th February 2024</i>
+                By placing an order with Pen &amp; Palm you are accepting and are bound by these
+                Terms and Conditions. Please ensure that you have read these terms and are happy
+                with them before placing your order.
               </p>
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12">
-              <h3>The type of personal information we collect</h3>
-
-              <p>We currently collect and process the following information:</p>
-
-              <p>Personal identifiers, contacts and characteristics (name and contact details) </p>
-            </div>
-          </div>
-          <div className="row py-5">
-            <div className="col-12">
-              <h3>How we get the personal information and why we have it</h3>
-
+              <h2>QUOTES</h2>
               <p>
-                Most of the personal information we process is provided directly by you for one of
-                the following reasons:
-              </p>
-
-              <p>You have filled in my contact form on my website</p>
-
-              <p>You have signed up to my mailing list</p>
-
-              <p>
-                We also receive personal information indirectly, from the following sources in the
-                following scenarios:
-              </p>
-
-              <p>
-                We use the information that you have provided in order to create, supply and deliver
-                wedding stationery, and to produce guest invitations and deliver these where
-                required
-              </p>
-
-              <p>We may share address information with Royal Mail or other chosen courier.</p>
-
-              <p>
-                Under the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely
-                on for processing this information are:
-              </p>
-
-              <p>Your consent.</p>
-
-              <p>
-                You are able to remove your consent at any time. You can do this by contacting
-                <a href="mailto:info@penandpalm.com">info@penandpalm.com</a>
-              </p>
-
-              <p>Legitimate interests.</p>
-            </div>
-          </div>
-          <div className="row py-5">
-            <div className="col-12">
-              <h3>How I store your personal information</h3>
-
-              <p>Your information is securely stored.</p>
-
-              <p>
-                We keep your details on file for 6 months after the date of your wedding for wedding
-                commissions. We will then dispose of your information and guest information by
-                deleting this from the server.
-              </p>
-
-              <p>
-                Invoices and financial documents are returned for 6 years (and such documents may
-                contain personal information e.g. your name and address).{' '}
+                Quotes are valid for 30 days from the date it was sent to you, and may be accepted
+                at any time during this 30 day period. On acceptance of the quote, a 50%
+                non-refundable deposit is required before any work will commence. The remaining 50%
+                is due once your order is ready to be shipped.
               </p>
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12">
-              <h3>Your data protection rights</h3>
-
-              <p>Under data protection law, you have rights including:</p>
-
+              <h2>TIMING</h2>
               <p>
-                <strong>Your right of access -</strong> You have the right to ask us for copies of
-                your personal information.
-              </p>
-
-              <p>
-                <strong>Your right to rectification -</strong> You have the right to ask us to
-                rectify personal information you think is inaccurate. You also have the right to ask
-                us to complete information you think is incomplete.
-              </p>
-
-              <p>
-                <strong>Your right to erasure -</strong> You have the right to ask us to erase your
-                personal information in certain circumstances.
-              </p>
-
-              <p>
-                <strong>Your right to restriction of processing -</strong> You have the right to ask
-                us to restrict the processing of your personal information in certain circumstances.
-              </p>
-
-              <p>
-                <strong>Your right to object to processing -</strong> You have the the right to
-                object to the processing of your personal information in certain circumstances.
-              </p>
-
-              <p>
-                <strong>Your right to data portability -</strong> You have the right to ask that we
-                transfer the personal information you gave us to another organisation, or to you, in
-                certain circumstances.
-              </p>
-
-              <p>
-                You are not required to pay any charge for exercising your rights. If you make a
-                request, we have one month to respond to you.
-              </p>
-
-              <p>
-                Please contact us at <a href="mailto:info@penandpalm.com">info@penandpalm.com</a> if
-                you wish to make a request.
+                For invitation suites, we work within a 3–4 week timescale, depending on final
+                requirements. Timescales will be provided on receipt of the deposit but are subject
+                to change. Circumstances outside of our control can cause delays. If we request
+                details by a certain date, we cannot be held responsible for any problems that occur
+                (including late delivery) if you do not respond in the required time.
               </p>
             </div>
           </div>
           <div className="row py-5">
             <div className="col-12">
-              <h3>How to complain</h3>
-
+              <h2>DESIGN + PROCESS</h2>
               <p>
-                If you have any concerns about our use of your personal information, you can make a
-                complaint to us at <a href="mailto:info@penandpalm.com">info@penandpalm.com</a>.
+                You must provide all details for your order in a typed manner, provided on email or
+                Word document. Three rounds of amendments are included within the Design Fee. If
+                further amendments are required, these will be charged for at an hourly rate.
               </p>
-
               <p>
-                You can also complain to the ICO if you are unhappy with how we have used your data.
+                Due to variables with all printed products, it is impossible to guarantee that the
+                final product will match exactly what is shown on your computer screen. The colour
+                in the PDF proofs may appear differently in person and we can’t guarantee that they
+                will be an accurate representation of final items printed.
               </p>
-
-              <p>The ICO&rsquo;s address:</p>
-
-              <p>Information Commissioner&rsquo;s Office</p>
-
-              <p>Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF</p>
-
-              <p>Helpline number: 0303 123 1113</p>
-
               <p>
-                ICO website: <a href="https://www.ico.org.uk">https://www.ico.org.uk</a>
+                If you require extra stationery later, we cannot guarantee exact colour matching to
+                your original order.
+              </p>
+              <p>
+                All products are designed, printed and finished by hand and as a result slight
+                variations and irregularities may occur. Whilst all designs are Pen &amp; Palm’s the
+                use of stock imagery or graphic elements are permitted.
+              </p>
+            </div>
+          </div>
+          <div className="row py-5">
+            <div className="col-12">
+              <h2>PROOF READING</h2>
+              <p>
+                Pen &amp; Palm is not responsible for proofreading and will not take any
+                responsibilities for any errors – please proofread everything provided three times!
+                All orders are subject to written approval of a final proof by you, which includes
+                spelling, grammar and text size. Any mistakes that are found after approval will be
+                subject to re-printing (or calligraphy re-do) costs.
+              </p>
+            </div>
+          </div>
+          <div className="row py-5">
+            <div className="col-12">
+              <h2>RENTALS</h2>
+              <p>
+                Mirror rental and/or other props rented out by Pen &amp; Palm are subject to an
+                additional “safety” deposit (such amount dependent on the quote total of such
+                rentals but no less than £100). Provided rentals are returned to Pen &amp; Palm
+                without damage, the safety deposit will be refunded. No other monies will be
+                returned.
+              </p>
+              <p>
+                In the case of damage to any rentals all or a portion of such safety deposit shall
+                be retained by Pen &amp; Palm to cover repairs/replacement costs, at Pen &amp;
+                Palm&amp;s sole discretion.
+              </p>
+              <p>
+                You are responsible for the cost and organisation of returning rentals to Pen &amp;
+                Palm.
+              </p>
+            </div>
+          </div>
+          <div className="row py-5">
+            <div className="col-12">
+              <h2>DELIVERY + COLLECTION</h2>
+              <p>Collection from Surrey, GU26 is free.</p>
+              <p>
+                All complete orders which are not being collected, will be sent by Royal Mail or
+                DPD, depending on the weight of the parcel. All parcels are appropriately packaged,
+                can be tracked and will require signing for. Delivery charges will be added onto
+                your invoice. Pen &amp; Palm are not responsible for any delay, loss or damage, that
+                are outside of reasonable control.
+              </p>
+              <p>
+                We are not responsible for any delivery issues as a result of your error (e.g.
+                incorrect address, deliveries left in “safe spaces”).
+              </p>
+            </div>
+          </div>
+          <div className="row py-5">
+            <div className="col-12">
+              <h2>CANCELLATION</h2>
+              <p>
+                All orders are non-refundable. Cancellations will only be accepted before final
+                proofs are approved and in such cases the Design Fee is non-refundable as it covers
+                work undertaken in developing your design. Once orders have gone to print (or
+                hand-lettered) we will not accept cancellations.
+              </p>
+              <p>
+                If there is a problem with your order, please notify us within 2 working days of
+                receipt.
+              </p>
+            </div>
+          </div>
+          <div className="row py-5">
+            <div className="col-12">
+              <h2>OWNERSHIP</h2>
+              <p>
+                All designs and photos are the property of Pen &amp; Palm. Any reproduction is
+                prohibited unless given written permission by us. You will use reasonable endeavours
+                to ensure that Pen &amp; Palm are credited in any approved reproduction. Pen &amp;
+                Palm can display materials and final prints created for you online, on social media,
+                at trade fairs or similar events as marketing and promotional material. Personal
+                details will be protected and not disclosed.
               </p>
             </div>
           </div>
