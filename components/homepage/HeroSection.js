@@ -16,6 +16,7 @@ export default function HeroSection() {
         slidesPerView={1}
         watchOverflow={false}
         autoplay={{ delay: 3000 }}
+        speed={1000}
         loop
         modules={[Autoplay, EffectFade]}
       >
