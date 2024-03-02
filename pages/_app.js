@@ -9,6 +9,9 @@ import commerce from '../lib/commerce';
 import { setCustomer } from '../store/actions/authenticateActions';
 
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+import 'swiper/css/effect-creative';
 
 const MyApp = ({ Component, pageProps }) => {
   const store = useStore(pageProps.initialState);

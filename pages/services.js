@@ -14,16 +14,7 @@ const Services = () => (
       <ServiceHero />
       <ServicesBlock
         bg="bg-brand400"
-        img={[
-          'wedding-1',
-          'wedding-2',
-          'wedding-3',
-          'wedding-4',
-          'wedding-5',
-          'wedding-6',
-          'wedding-7',
-          'wedding-8',
-        ]}
+        img={['wedding-1', 'wedding-2', 'wedding-3', 'wedding-4', 'wedding-5', 'wedding-6']}
       >
         <h3 className="mb-4 font-family-secondary">Wedding Invitations</h3>
         <p>
@@ -39,21 +30,20 @@ const Services = () => (
       <ServicesBlock
         otherBg="bg-brand400"
         img={[
-          'stationary-1',
-          'stationary-2',
-          'stationary-3',
-          'stationary-4',
-          'stationary-5',
-          'stationary-6',
-          'stationary-7',
-          'stationary-8',
-          'stationary-9',
-          'stationary-10',
-          'stationary-11',
-          'stationary-12',
-          'stationary-13',
-          'stationary-14',
-          'stationary-15',
+          'stationery-1',
+          'stationery-2',
+          'stationery-3',
+          'stationery-4',
+          'stationery-5',
+          'stationery-6',
+          'stationery-7',
+          'stationery-8',
+          'stationery-9',
+          'stationery-10',
+          'stationery-11',
+          'stationery-12',
+          'stationery-13',
+          'stationery-14',
         ]}
         imgLeft
       >
@@ -80,7 +70,7 @@ const Services = () => (
       >
         <h3 className="mb-4 font-family-secondary">Hand painted Signage</h3>
         <p>
-          When you&pos;re after something super special - hand painted signage is so striking on
+          When you&apos;re after something super special - hand painted signage is so striking on
           your wedding day and then is perfect to keep afterwards in your home.
         </p>
         <h5 className="my-2 font-family-secondary">Wood</h5>
@@ -114,6 +104,7 @@ const Services = () => (
           'misc-7',
           'misc-8',
           'misc-9',
+          'misc-10',
         ]}
         imgLeft
       >
