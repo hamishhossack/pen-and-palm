@@ -60,6 +60,7 @@ class MyDocument extends Document {
             content="Pen and palm - Calligraphy, signage & stationery beautifully bespoke and uniquely you"
           />
           <meta name="twitter:card" content="summary_large_image" />
+          <meta name="p:domain_verify" content="5a14a0e2db2f5d8224cc1be5822d651d" />
         </Head>
         <body>
           <Main />
